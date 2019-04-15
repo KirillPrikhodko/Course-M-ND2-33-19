@@ -1,32 +1,25 @@
 ﻿@page
-<div class="container-fluid">
-    <div class="row">
-        <div class="col">
-            <div class="row">&nbsp;</div>
-            <div class="row">
-                <div class="col">&nbsp;</div>
-                <div class="col">
-                    Message...<input type="text" id="messageInput" />
-                    <input type="button" id="sendButton" value="Send Message" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <hr />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">&nbsp;</div>
-                <div class="col">
-                    <ul id="messagesList"></ul>
-                </div>
-            </div>
-        </div>
-        <canvas style="border:1px solid #000000;" id="canvas" width="600" height="400" class="col"></canvas>
-        <button id="clearCanvas">Clear Canvas</button>
+<canvas style="border:1px solid #000000;" id="canvas" width="600" height="400" class="col"></canvas>
+<button id="clearCanvas">Clear Canvas</button><div class="row">&nbsp;</div>
+<div class="row">
+    <div class="col">&nbsp;</div>
+    <div class="col">
+        Message...<input type="text" id="messageInput" />
+        <input type="button" id="sendButton" value="Send Message" />
     </div>
 </div>
-<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<div class="row">
+    <div class="col">
+        <hr />
+    </div>
+</div>
+<div class="row">
+    <div class="col">&nbsp;</div>
+    <div class="col">
+        <ul id="messagesList"></ul>
+    </div>
+</div>
+<script src="~/lib/signalr/dist/browser/signalr.js" type="text/javascript"></script>
 <script src="~/lib/jquery/dist/jquery.js"></script>
 <script src="~/js/charades.js"></script>
 <script src="~/js/app.js"></script>
